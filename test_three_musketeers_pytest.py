@@ -19,6 +19,10 @@ def test_create_board():
     create_board()
     assert at((0,0)) == R
     assert at((0,4)) == M
+    assert at ((2,1)) == R
+    assert at ((4,0)) == M
+    assert at ((2,2)) == M
+    #both tests should not return errors
     #eventually add at least two more test cases
 
 def test_set_board():
@@ -39,57 +43,3 @@ def test_string_to_location():
     assert string_to_location('A1') == (0,0)
     #eventually add at least one more exception test and two more
     #test with correct inputs
-
-def test_location_to_string():
-    # Replace with tests
-
-def test_at():
-    # Replace with tests
-
-def test_all_locations():
-    # Replace with tests
-
-def test_adjacent_location():
-    # Replace with tests
-    
-def test_is_legal_move_by_musketeer():
-    # Replace with tests
-    
-def test_is_legal_move_by_enemy():
-    # Replace with tests
-
-def test_is_legal_move():
-    # Replace with tests
-
-def test_can_move_piece_at():
-    # Replace with tests
-
-def test_has_some_legal_move_somewhere():
-    set_board(board1)
-    assert has_some_legal_move_somewhere('M') == True
-    assert has_some_legal_move_somewhere('R') == True
-    # Eventually put at least three additional tests here
-    # with at least one additional board
-
-def test_possible_moves_from():
-    # Replace with tests
-
-def test_is_legal_location():
-    # Replace with tests
-
-def test_is_within_board():
-    # Replace with tests
-
-def test_all_possible_moves_for():
-    # Replace with tests
-    
-def test_make_move():
-    # Replace with tests
-    
-def test_choose_computer_move():
-    # Replace with tests; should work for both 'M' and 'R'
-
-def test_is_enemy_win():
-    # Replace with tests
-
-
